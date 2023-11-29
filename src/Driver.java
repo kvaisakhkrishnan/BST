@@ -6,6 +6,7 @@ public class Driver {
 		tree.addNode(30);
 		tree.addNode(70);
 		tree.preOrder(tree.root);
+		tree.search(tree.root, 30);
 	}
 	
 }

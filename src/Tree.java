@@ -46,4 +46,17 @@ public class Tree<T extends Comparable<T>> {
 			preOrder(node.right);
 		}
 	}
+	public void search(Node<T> node, T item) {
+		if(node == null) {
+			return;
+		}
+		else {
+			search(node.left, item);
+			if(node.data.equals(item)) {
+				System.out.println("FOUND");
+				return;
+			}
+			search(node.right, item);
+		}
+	}
 }
